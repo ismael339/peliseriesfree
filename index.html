@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ver Series y Películas Gratis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #24292e;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      background: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #24292e;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Input para buscar -->
+<input
+  type="text"
+  id="searchInput"
+  placeholder="Buscar plataformas..."
+  onkeyup="filterCards()"
+  style="padding:8px; width: 100%; max-width: 400px; margin-bottom: 20px;"
+/>
+
+<!-- Script para filtrar las tarjetas -->
+<script>
+  function filterCards() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toLowerCase();
+    const cards = document.querySelectorAll('#cardsContainer .card');
+
+    cards.forEach(card => {
+      const title = card.querySelector('h2').textContent.toLowerCase();
+      const description = card.querySelector('p').textContent.toLowerCase();
+
+      if (title.includes(filter) || description.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+</script>
+
+  <header>
+    <h1>Plataformas Gratuitas para Ver Series y Películas</h1>
+    <p>¡Disfruta contenido sin pagar, de forma legal!</p>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Pluto TV</h2>
+      <p>Televisión en vivo y contenido bajo demanda totalmente gratis. Disponible en español.</p>
+      <a href="https://pluto.tv/" target="_blank">Visitar Pluto TV</a>
+    </div>
+
+    <div class="card">
+      <h2>Tubi TV</h2>
+      <p>Amplio catálogo de películas y series gratis. Disponible en algunos países con VPN.</p>
+      <a href="https://tubitv.com/" target="_blank">Visitar Tubi TV</a>
+    </div>
+
+    <div class="card">
+      <h2>RTVE Play</h2>
+      <p>Accede a contenido español de calidad como series, documentales y películas.</p>
+      <a href="https://www.rtve.es/play/" target="_blank">Visitar RTVE Play</a>
+    </div>
+
+    <div class="card">
+      <h2>Rakuten TV Free</h2>
+      <p>Contenido gratuito con anuncios, incluyendo cine, documentales y más.</p>
+      <a href="https://rakuten.tv/es" target="_blank">Visitar Rakuten TV</a>
+    </div>
+
+<div class="card">
+  <h2><!-- NOMBRE DE LA PLATAFORMA -->Cuevana</h2> <!-- ✅ RELLENAR AQUÍ -->
+  <p><!-- DESCRIPCIÓN DE LA PLATAFORMA -->Mitica Plataforma De Pelis Y Series Gratis Tiene Todas Las Pelis ySeries Pero Tiene Muchos Anuncios y Estafas</p> <!-- ✅ RELLENAR AQUÍ -->
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj7yfaFlYWOAxV6TqQEHdhGDMIQFnoECBwQAQ&url=https%3A%2F%2Fcuevanaplus.co%2F&usg=AOvVaw18hdRTJBvB9IIqdKnDAxVd&opi=89978449" target="_blank">Visitar <!-- NOMBRE DE LA PLATAFORMA -->Cuevana</a> <!-- ✅ RELLENAR AQUÍ -->
+</div>
+
+<div class="card">
+  <h2><!-- NOMBRE DE LA PLATAFORMA -->Peliplus</h2> <!-- ✅ RELLENAR AQUÍ -->
+  <p><!-- DESCRIPCIÓN DE LA PLATAFORMA -->Peliplus Es Como Cuevana Pero Ya esta Un poco Mas Avandonada No La recomiendo Pero Aqui La dejo</p> <!-- ✅ RELLENAR AQUÍ -->
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi3hrHBlYWOAxXITKQEHWTaEqYQFnoECAoQAQ&url=https%3A%2F%2Fpelisplushd.mx%2F&usg=AOvVaw0Chm4XBsvsQs2BELljkpTB&opi=89978449" target="_blank">Visitar <!-- NOMBRE DE LA PLATAFORMA -->Peliplus</a> <!-- ✅ RELLENAR AQUÍ -->
+</div>
+
+<div class="card">
+  <h2><!-- NOMBRE DE LA PLATAFORMA -->Peliflix</h2> <!-- ✅ RELLENAR AQUÍ -->
+  <p><!-- DESCRIPCIÓN DE LA PLATAFORMA -->Es Una web de peliculs y series psrecida a cuevana y peliplus pero contiene peliculas y series mas modernas recomendada para los jovenes.</p> <!-- ✅ RELLENAR AQUÍ -->
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwid3pX2lYWOAxXTV6QEHQ8aGywQFnoECAoQAQ&url=https%3A%2F%2Fpelisflix20.uno%2F&usg=AOvVaw33XNjw5Xdvju1YHqGOcZGo&opi=89978449" target="_blank">Visitar <!-- NOMBRE DE LA PLATAFORMA -->Peliflix</a> <!-- ✅ RELLENAR AQUÍ -->
+</div>
+
+ <div class="card">
+  <h2><!-- NetMirror -->NetMirror</h2>NetMirror <!-- ✅ RELLENAR AQUÍ -->
+  <p><!-- DESCRIPCIÓN DE LA PLATAFORMA --></p>Aplicacion Para Todos Los Dispositivos Que Tiene peliculas y Series De plataformas Como Disney Plus, Netflix, Prime Video, HBO y etc... <!-- ✅ RELLENAR AQUÍ -->
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiyhbKylIWOAxVcSfEDHZInArkQFnoECB8QAQ&url=https%3A%2F%2Fnetmirror.app%2F&usg=AOvVaw2hgOIegpWE9RWIXifJapuZ&opi=89978449" target="_blank">Visitar <!-- NOMBRE DE LA PLATAFORMA -->NetMirror</a> <!-- ✅ RELLENAR AQUÍ -->
+</div>
+
+<div class="card">
+  <h2><!-- NOMBRE DE LA PLATAFORMA -->Gnula</h2> <!-- ✅ RELLENAR AQUÍ -->
+  <p><!-- DESCRIPCIÓN DE LA PLATAFORMA -->Es una web que tiene todas o casi todas las peliculas y series pero contiene muchos adds y anuncios para mayores.</p> <!-- ✅ RELLENAR AQUÍ -->
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwix6-ipl4WOAxXuRKQEHSjpIg0QFnoECBwQAQ&url=https%3A%2F%2Fgnulahd.nu%2F&usg=AOvVaw2avrDPSofJj1vMzZFARbrI&opi=89978449" target="_blank">Visitar <!-- NOMBRE DE LA PLATAFORMA -->Gnula</a> <!-- ✅ RELLENAR AQUÍ -->
+</div>
+
+<div class="card">
+  <h2>Filmoteca Española</h2>
+  <p>Películas clásicas españolas disponibles gratis online. Ideal para amantes del cine antiguo.</p>
+  <a href="https://www.rtve.es/filmoteca/" target="_blank">Visitar Filmoteca Española</a>
+</div>
+
+<div class="card">
+  <h2>Crunchyroll (Gratis)</h2>
+  <p>Plataforma de anime con opción gratuita (con anuncios). Muchos títulos populares disponibles.</p>
+  <a href="https://www.crunchyroll.com/es/" target="_blank">Visitar Crunchyroll</a>
+</div>
+
+<div class="card">
+  <h2>Canal Cocina Play</h2>
+  <p>Para los fans de los programas de cocina. Disponible en español y totalmente gratis.</p>
+  <a href="https://canalcocina.es/play" target="_blank">Visitar Canal Cocina Play</a>
+</div>
+
+<div class="card">
+  <h2>Panda Biggs (Portugal)</h2>
+  <p>Canal para niños y adolescentes con series animadas y contenido gratuito en portugués.</p>
+  <a href="https://www.pandabiggs.pt/" target="_blank">Visitar Panda Biggs</a>
+</div>
+
+<div class="card">
+  <h2>Classic Cinema Online</h2>
+  <p>Colección de películas clásicas del cine de oro. Sin necesidad de registro.</p>
+  <a href="http://www.classiccinemaonline.com/" target="_blank">Visitar Classic Cinema Online</a>
+</div>
+
+<div class="card">
+  <h2>Internet Archive</h2>
+  <p>Más de 10.000 películas, series y programas libres de derechos. Tesoro audiovisual gratuito.</p>
+  <a href="https://archive.org/details/movies" target="_blank">Visitar Internet Archive</a>
+</div>
+
+ <h2>Webs Film Uk</h2>
+
+<div class="card">
+  <h2>BBC iPlayer</h2>
+  <p>Servicio de streaming gratuito de la BBC. Series, documentales y películas. Solo disponible en Reino Unido.</p>
+  <a href="https://www.bbc.co.uk/iplayer" target="_blank">Visitar BBC iPlayer</a>
+</div>
+
+<div class="card">
+  <h2>ITVX</h2>
+  <p>Contenido gratuito bajo demanda de ITV. Series británicas populares y películas. Disponible solo en UK.</p>
+  <a href="https://www.itv.com/" target="_blank">Visitar ITVX</a>
+</div>
+
+<div class="card">
+  <h2>Channel 4 (All 4)</h2>
+  <p>Ofrece películas, documentales y reality shows gratis con anuncios. Solo para usuarios del Reino Unido.</p>
+  <a href="https://www.channel4.com/" target="_blank">Visitar Channel 4</a>
+</div>
+
+<div class="card">
+  <h2>My5</h2>
+  <p>Servicio gratuito de Channel 5. Incluye películas, documentales y series. Disponible en Reino Unido.</p>
+  <a href="https://www.my5.tv/" target="_blank">Visitar My5</a>
+</div>
+
+<div class="card">
+  <h2>UKTV Play</h2>
+  <p>Plataforma de UKTV con acceso gratuito a programas y películas británicas. Solo para residentes en Reino Unido.</p>
+  <a href="https://uktvplay.co.uk/" target="_blank">Visitar UKTV Play</a>
+</div>
+
+<div class="card">
+  <h2>Filmzie</h2>
+  <p>Películas independientes y clásicos gratis con anuncios. Disponible en Reino Unido y otros países europeos.</p>
+  <a href="https://filmzie.com/" target="_blank">Visitar Filmzie</a>
+</div>
+
+<div class="card">
+  <h2>Plex UK</h2>
+  <p>Versión disponible para Reino Unido con acceso gratuito a películas y series con anuncios.</p>
+  <a href="https://www.plex.tv/watch-free/" target="_blank">Visitar Plex UK</a>
+</div>
+
+<div class="card">
+  <h2>STV Player</h2>
+  <p>Streaming gratuito de STV, canal escocés. Incluye películas, series y entretenimiento. Disponible solo en UK.</p>
+  <a href="https://player.stv.tv/" target="_blank">Visitar STV Player</a>
+</div>
+
+<div class="card">
+  <h2>Freevee UK</h2>
+  <p>Servicio de Amazon con películas y series gratis con anuncios. Disponible en Reino Unido.</p>
+  <a href="https://www.amazon.co.uk/freevee" target="_blank">Visitar Freevee UK</a>
+</div>
+
+<div class="card">
+  <h2>Popcornflix (UK)</h2>
+  <p>Películas de acción, comedia y terror gratuitas. Disponible en Reino Unido con VPN o acceso directo.</p>
+  <a href="https://www.popcornflix.com/" target="_blank">Visitar Popcornflix</a>
+</div>
+
+<div class="card">
+  <h2>Crunchyroll UK (Gratis)</h2>
+  <p>Anime con opción gratuita (con anuncios). Disponible en Reino Unido con amplio catálogo japonés subtitulado.</p>
+  <a href="https://www.crunchyroll.com/en-gb" target="_blank">Visitar Crunchyroll UK</a>
+</div>
+
+<div class="card">
+  <h2>BFI Player Free</h2>
+  <p>British Film Institute ofrece cortos y películas clásicas británicas gratis. Solo para Reino Unido.</p>
+  <a href="https://player.bfi.org.uk/free" target="_blank">Visitar BFI Player Free</a>
+</div>
+
+<div class="card">
+  <h2>Plex TV</h2>
+  <p>Plataforma con miles de películas y canales de TV en vivo. Gratuito, sin registro obligatorio.</p>
+  <a href="https://www.plex.tv/watch-free/" target="_blank">Visitar Plex TV</a>
+</div>
+
+<div class="card">
+  <h2>Vix</h2>
+  <p>Películas, series y telenovelas en español totalmente gratis, con anuncios. Contenido latinoamericano y de Hollywood.</p>
+  <a href="https://www.vix.com/es" target="_blank">Visitar Vix</a>
+</div>
+
+<div class="card">
+  <h2>Canal ONCE (México)</h2>
+  <p>Canal cultural mexicano con documentales, series y programas para jóvenes y adultos. Disponible online.</p>
+  <a href="https://canalonce.mx/" target="_blank">Visitar Canal ONCE</a>
+</div>
+
+<div class="card">
+  <h2>TV Azteca En Vivo</h2>
+  <p>Acceso gratuito a series, programas y películas mexicanas. Plataforma de streaming abierta 24/7.</p>
+  <a href="https://www.tvazteca.com/" target="_blank">Visitar TV Azteca</a>
+</div>
+
+<div class="card">
+  <h2>TV Pública Argentina</h2>
+  <p>Streaming gratuito de la televisión pública argentina. Incluye películas nacionales, series y cultura.</p>
+  <a href="https://www.tvpublica.com.ar/" target="_blank">Visitar TV Pública</a>
+</div>
+
+<div class="card">
+  <h2>Films for Action</h2>
+  <p>Plataforma con documentales gratuitos y películas independientes sobre temas sociales, culturales y medioambientales.</p>
+  <a href="https://www.filmsforaction.org/watch/" target="_blank">Visitar Films for Action</a>
+</div>
+
+ <h2>Webs france</h2>
+
+ <div class="card">
+  <h2>Arte.tv</h2>
+  <p>Canal cultural franco-alemán con documentales, cine europeo, series y programas. Disponible gratis en Francia y Europa.</p>
+  <a href="https://www.arte.tv/fr/" target="_blank">Visitar ARTE.tv</a>
+</div>
+
+<div class="card">
+  <h2>France.tv</h2>
+  <p>Servicio oficial de France Télévisions. Series, documentales y películas gratuitas en francés.</p>
+  <a href="https://www.france.tv/" target="_blank">Visitar France.tv</a>
+</div>
+
+<div class="card">
+  <h2>TV5MONDEplus</h2>
+  <p>Plataforma internacional gratuita con contenido francófono: películas, series y documentales. Acceso global.</p>
+  <a href="https://www.tv5mondeplus.com/" target="_blank">Visitar TV5MONDEplus</a>
+</div>
+
+<div class="card">
+  <h2>6play</h2>
+  <p>Servicio de streaming del grupo M6. Series, realities y películas con anuncios. Disponible en Francia.</p>
+  <a href="https://www.6play.fr/" target="_blank">Visitar 6play</a>
+</div>
+
+<div class="card">
+  <h2>MyTF1</h2>
+  <p>Plataforma de TF1 con acceso gratuito a series, programas y cine francés. Disponible en Francia.</p>
+  <a href="https://www.tf1.fr/" target="_blank">Visitar MyTF1</a>
+</div>
+
+<div class="card">
+  <h2>France 24 (en français)</h2>
+  <p>Canal informativo con documentales, debates y reportajes. Contenido audiovisual gratuito en francés.</p>
+  <a href="https://www.france24.com/fr/" target="_blank">Visitar France 24</a>
+</div>
+
+<div class="card">
+  <h2>Public Sénat</h2>
+  <p>Canal del Senado francés. Ofrece debates, reportajes y documentales políticos. Acceso gratuito desde Francia.</p>
+  <a href="https://www.publicsenat.fr/" target="_blank">Visitar Public Sénat</a>
+</div>
+
+<div class="card">
+  <h2>Ina.fr</h2>
+  <p>Archivo audiovisual histórico francés. Documentales, películas antiguas, entrevistas y cultura pop francesa.</p>
+  <a href="https://www.ina.fr/" target="_blank">Visitar INA.fr</a>
+</div>
+
+<div class="card">
+  <h2>Télérama Vidéo</h2>
+  <p>Selección gratuita de películas recomendadas por el medio francés Télérama. Oferta rotativa y de acceso limitado.</p>
+  <a href="https://video.telerama.fr/" target="_blank">Visitar Télérama Vidéo</a>
+</div>
+
+<div class="card">
+  <h2>OKAST</h2>
+  <p>Plataforma francesa que aloja canales independientes gratuitos y cine alternativo. Algunos contenidos sin pago.</p>
+  <a href="https://okast.tv/" target="_blank">Visitar OKAST</a>
+</div>
+
+<div class="card">
+  <h2>UniversCiné (Gratis ocasional)</h2>
+  <p>Plataforma francesa de cine independiente. Algunas películas gratuitas por tiempo limitado o promociones.</p>
+  <a href="https://www.universcine.com/" target="_blank">Visitar UniversCiné</a>
+</div>
+
+<div class="card">
+  <h2>Pluto TV France</h2>
+  <p>Versión francesa de Pluto TV con canales temáticos y películas dobladas o subtituladas al francés.</p>
+  <a href="https://pluto.tv/fr/live-tv" target="_blank">Visitar Pluto TV France</a>
+</div>
+
+<h2>Webs Alemain</h2>
+
+<div class="card">
+  <h2>ARD Mediathek</h2>
+  <p>Plataforma de streaming del grupo público ARD. Películas, series, noticias y documentales. Gratuita en Alemania.</p>
+  <a href="https://www.ardmediathek.de/" target="_blank">Visitar ARD Mediathek</a>
+</div>
+
+<div class="card">
+  <h2>ZDF Mediathek</h2>
+  <p>Canal público alemán con series, películas y reportajes disponibles gratis bajo demanda.</p>
+  <a href="https://www.zdf.de/" target="_blank">Visitar ZDF Mediathek</a>
+</div>
+
+<div class="card">
+  <h2>3sat Mediathek</h2>
+  <p>Canal cultural en alemán. Contenido gratuito de cine, arte, ciencia y sociedad. Disponible en Alemania, Austria y Suiza.</p>
+  <a href="https://www.3sat.de/mediathek" target="_blank">Visitar 3sat Mediathek</a>
+</div>
+
+<div class="card">
+  <h2>Arte.de (versión alemana)</h2>
+  <p>Canal cultural franco-alemán. Películas, documentales y series en alemán. Gratuito en Alemania y la UE.</p>
+  <a href="https://www.arte.tv/de/" target="_blank">Visitar ARTE.de</a>
+</div>
+
+<div class="card">
+  <h2>KiKA</h2>
+  <p>Canal infantil alemán. Ofrece series animadas, educativas y películas familiares. Gratuito desde Alemania.</p>
+  <a href="https://www.kika.de/" target="_blank">Visitar KiKA</a>
+</div>
+
+<div class="card">
+  <h2>Funk.net</h2>
+  <p>Contenido joven y alternativo producido por ARD y ZDF. Disponible gratuitamente en Alemania y Austria.</p>
+  <a href="https://www.funk.net/" target="_blank">Visitar Funk.net</a>
+</div>
+
+<div class="card">
+  <h2>Netzkino</h2>
+  <p>Streaming gratuito de películas en alemán con anuncios. Cine clásico, comedia, acción y más.</p>
+  <a href="https://www.netzkino.de/" target="_blank">Visitar Netzkino</a>
+</div>
+
+<div class="card">
+  <h2>Watchbox (ahora parte de RTL+)</h2>
+  <p>Antes independiente, ahora integrada en RTL+. Tiene contenido gratuito con anuncios: películas y series internacionales.</p>
+  <a href="https://www.tvnow.de/" target="_blank">Visitar RTL+ (ex-Watchbox)</a>
+</div>
+
+<div class="card">
+  <h2>Moviepilot Stream</h2>
+  <p>Buscador de plataformas legales con filtros para encontrar películas gratuitas. Interfaz en alemán.</p>
+  <a href="https://www.moviepilot.de/streaming" target="_blank">Visitar Moviepilot Stream</a>
+</div>
+
+<div class="card">
+  <h2>Plex Alemania</h2>
+  <p>Versión accesible desde Alemania. Películas y canales gratuitos con anuncios.</p>
+  <a href="https://www.plex.tv/watch-free/" target="_blank">Visitar Plex DE</a>
+</div>
+
+<div class="card">
+  <h2>Joyn (Gratis)</h2>
+  <p>Plataforma alemana con series y películas disponibles gratuitamente (opción premium también disponible).</p>
+  <a href="https://www.joyn.de/" target="_blank">Visitar Joyn</a>
+</div>
+
+<div class="card">
+  <h2>Maxdome Free (dentro de Joyn)</h2>
+  <p>Servicio gratuito integrado en Joyn con películas clásicas y contenido para todos los públicos.</p>
+  <a href="https://www.joyn.de/serien/maxdome" target="_blank">Visitar Maxdome en Joyn</a>
+</div>
+
+    <div class="card">
+      <h2>Plex TV</h2>
+      <p>Películas, series y TV en vivo gratis. No necesitas cuenta para empezar.</p>
+      <a href="https://www.plex.tv/watch-free/" target="_blank">Visitar Plex</a>
+    </div>
+  </main>
+<div>
+    
+  <h3>Visitas a esta página:</h3>
+  <span id="visitCount">Cargando...</span>
+</div>
+
+<script>
+  // Cambia "tu-namespace" y "tu-key" por nombres únicos para tu web
+  const namespace = "miweb123456"; 
+  const key = "contador1";
+
+  // URL API para incrementar el contador y obtener el valor
+  const url = `https://api.countapi.xyz/hit/${namespace}/${key}`;
+
+  fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("visitCount").textContent = data.value;
+    })
+    .catch(err => {
+      document.getElementById("visitCount").textContent = "Error cargando contador";
+      console.error(err);
+    });
+</script>
+
+  <footer>
+    © 2025 TuWebGratis. Solo recomendamos plataformas legales.
+  </footer>
+</body>
+</html>
